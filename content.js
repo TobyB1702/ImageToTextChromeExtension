@@ -1,2 +1,5 @@
 // content.js
-alert("Hello from your Chrome extension!")
+// chrome.browserAction.onClicked.addListener(
+//   function(tab) {
+    alert('working?');
+// });

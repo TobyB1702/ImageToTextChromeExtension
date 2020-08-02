@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "My Cool Extension",
-  "version": "0.1",
+  "name": "Image to text",
+  "version": "0.2",
+  "icons": {"128": "baconlogo.png"},
   "content_scripts": [
    {
       "matches": [
