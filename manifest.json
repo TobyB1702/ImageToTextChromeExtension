@@ -2,13 +2,13 @@
   "manifest_version": 2,
   "name": "Image to text",
   "version": "0.2",
-  "icons": {"128": "baconlogo.png"},
-  "content_scripts": [
-   {
-      "matches": [
-      "<all_urls>"
-      ],
-      "js": ["content.js"]
-   }
-]
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon":"baconlogo.png"
+  }
+
+
 }
