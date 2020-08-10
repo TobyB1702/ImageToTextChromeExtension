@@ -10,9 +10,10 @@
       "js": ["content.js"]
     }
   ],
+  "permissions": ["activeTab"],
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["test.js"]
   },
   "browser_action": {
     "default_icon":"baconlogo.png"
