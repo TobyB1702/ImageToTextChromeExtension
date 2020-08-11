@@ -1,12 +1,9 @@
-// console.log("Background running");
-// chrome.browserAction.onClicked.addListener(buttonClicked)
-//
-// function buttonClicked(tab) {
-//   console.log("button clicked");
-//
-//   let msg = {
-//     txt: "screenshot"
-//   }
-//
-//   chrome.tabs.sendMessage(tab.id, msg);
-// }
+console.log("Background running");
+chrome.browserAction.onClicked.addListener(openNewTab)
+
+ function openNewTab(tab) {
+   chrome.tabs.create({'url':"chrome://newtab"})
+       chrome.tabs.captureVisibleTab(null,{},function(dataUri){
+           console.log(dataUri);
+       });
+     }
