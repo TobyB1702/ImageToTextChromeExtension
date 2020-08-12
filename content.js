@@ -1,9 +1,7 @@
-// chrome.runtime.onMessage.addListener(gotMessage);
-//
-// function gotMessage(message, sender, sendResponse) {
-//   if(message.txt === "screenshot") {
-//     chrome.tabs.captureVisibleTab(null,{},function(dataUri){
-//         console.log(dataUri);
-//     });
-// }
-// }
+// chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
+//     if (msg.ready === "ready") {
+//         if (confirm('Do you want to have a capture of this screen?')) {
+//             sendResponse({download : "download"});
+//         }
+//     }
+// });
