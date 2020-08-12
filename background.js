@@ -9,5 +9,6 @@ function takeScreenshot(tab) {
 
 }
 function openNewTab() {
-  chrome.tabs.create({'url':"chrome://newtab"})
+   var newURL = "screenshot.html";
+    chrome.tabs.create({ url: newURL });
 }

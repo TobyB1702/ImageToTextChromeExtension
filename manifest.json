@@ -2,9 +2,6 @@
   "manifest_version": 2,
   "name": "Image to text",
   "version": "0.2",
-  "chrome_url_overrides" : {
-    "newtab": "screenshot.html"
-  },
   "content_scripts": [
     {
       "matches": [
